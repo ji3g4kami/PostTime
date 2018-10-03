@@ -12,7 +12,7 @@ public class PostTime {
     let postDate: Date
     let currentDate = Date()
     
-    init(postDate: TimeInterval) {
+    public init(postDate: TimeInterval) {
         self.postDate = Date(timeIntervalSince1970: postDate)
     }
 
