@@ -10,6 +10,7 @@
 		409772942164526B0077F4A1 /* PostTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4097728A2164526B0077F4A1 /* PostTime.framework */; };
 		409772992164526B0077F4A1 /* PostTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409772982164526B0077F4A1 /* PostTimeTests.swift */; };
 		4097729B2164526B0077F4A1 /* PostTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 4097728D2164526B0077F4A1 /* PostTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		409772A521645B440077F4A1 /* PostTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409772A421645B440077F4A1 /* PostTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		409772932164526B0077F4A1 /* PostTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		409772982164526B0077F4A1 /* PostTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTimeTests.swift; sourceTree = "<group>"; };
 		4097729A2164526B0077F4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409772A421645B440077F4A1 /* PostTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				4097728D2164526B0077F4A1 /* PostTime.h */,
 				4097728E2164526B0077F4A1 /* Info.plist */,
+				409772A421645B440077F4A1 /* PostTime.swift */,
 			);
 			path = PostTime;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					409772892164526B0077F4A1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					409772922164526B0077F4A1 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409772A521645B440077F4A1 /* PostTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		4097729F2164526B0077F4A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengli.PostTime;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +374,7 @@
 		409772A02164526B0077F4A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +401,7 @@
 		409772A22164526B0077F4A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = PostTimeTests/Info.plist;
@@ -411,6 +420,7 @@
 		409772A32164526B0077F4A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = PostTimeTests/Info.plist;
